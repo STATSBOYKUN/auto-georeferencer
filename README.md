@@ -7,6 +7,8 @@
 
 Aplikasi Python modular untuk menghasilkan worldfile (`.jgw` / `.pgw` / `.tfw`) presisi tinggi secara otonom dari peta scan Wilkerstat BPS. Dilengkapi deteksi arah utara otomatis (*North-Up correction*), penyelarasan kontur batas SLS (*Closed-Loop Convolutional Optimizer*), integrasi basemap satelit Google Hybrid, serta evaluasi mandiri (*Quality Gate Diagnostics & Self-Checking Verification Preview*).
 
+> 📖 **Dokumentasi Teori & Matematika**: Penjelasan komprehensif mengenai formulasi transformasi affine, distance transform 2D, formula Slippy Map geodetik, hingga segmentasi warna diferensial dapat dibaca pada [**docs/TEORI.md**](docs/TEORI.md).
+
 ---
 
 ## 📸 Contoh Hasil & Antarmuka
@@ -101,6 +103,7 @@ wilkerstat/
 │   ├── batas-peta/              # Peta batas referensi SLS (.geojson)
 │   └── Peta Contoh/             # Sampel pengujian lokal (diabaikan oleh git & runner)
 ├── docs/
+│   ├── TEORI.md                 # Landasan matematika, geodesi, & metodologi algoritma
 │   └── images/                  # Aset tangkapan layar & preview untuk dokumentasi
 └── output/
     └── .gitkeep                 # Direktori keluaran hasil georeferensi
